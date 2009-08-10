@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>gtd</string>
+	</array>
+	<key>keyEquivalent</key>
+	<string>^~G</string>
+	<key>name</key>
+	<string>LGTD</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>^(?=.)</string>
+			<key>end</key>
+			<string>^(?=not)possible$</string>
+			<key>name</key>
+			<string>text.html.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.html.markdown</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.html.markdown.lgtd</string>
+	<key>uuid</key>
+	<string>29F21B40-5BC4-4F5C-A06A-269556373E8D</string>
+</dict>
+</plist>

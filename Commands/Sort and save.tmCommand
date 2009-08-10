@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>file=`basename $TM_FILEPATH`
+if [ $file = projects.gtd ]; then
+	echo "projects -&gt; contexts"
+	projects2contexts.pl
+elif [ $file = contexts.gtd ]; then
+	echo "contexts -&gt; projects"
+	contexts2projects.pl
+fi
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@s</string>
+	<key>name</key>
+	<string>Sort and save</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>text.html.markdown.lgtd</string>
+	<key>uuid</key>
+	<string>C63C4085-6DD6-45A9-9F20-64EDD6779381</string>
+</dict>
+</plist>

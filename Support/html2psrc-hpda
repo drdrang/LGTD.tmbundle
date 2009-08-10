@@ -1,0 +1,24 @@
+/* Configuration file for html2ps. 
+   Meant for printing out on index cards.
+*/
+
+@html2ps {
+  ball-radius: .75em;
+}
+
+/* Standard style sheet definitions */
+body    { font-family: Times;
+          font-size: 10pt; }
+H1      { font-family: Helvetica;
+          font-size: 12pt;
+          font-weight: bold; }
+H2      { font-family: Helvetica;
+          font-size: 10pt;
+          font-weight: bold; }
+ul      { margin-left: 1.5em; }
+li      { margin-left: -.5em; }
+@page   { size: 8.5in 11in;
+          margin-left: 3in;
+          margin-right: 3in;
+          margin-top: .25in;
+          margin-bottom: 6.25in; }
