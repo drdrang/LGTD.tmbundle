@@ -1285,13 +1285,17 @@ $cd
 /U {OU{gsave CP currentfont /FontInfo get /UnderlinePosition get
  0 E currentfont /FontMatrix get dtransform E pop add newpath M dup SW pop
  CJ 0 RL stroke grestore}if} D
-% This is the original bullet-drawing code, which made closed and open circles.
+% This is the original bullet-drawing code, which made alternately
+% closed and open circles.
 %/B {OU Br 0 gt and{CP Ts neg Ts .33 mul R gsave 0 Sg
 % CP newpath Ts Br mul 0 360 arc closepath UI 2 mod 0 eq{stroke}{fill}ie
 % grestore M CP E Ts Br 1 add mul sub E BB /Ms t D}if}D
-% This is new bullet-drawing code, which makes open and closed squares
+% This is the replacement bullet-drawing code, which makes open squares,
+% suitable for checkboxes.
 /B {OU Br 0 gt and{CP Ts neg Ts .33 mul R gsave 0 Sg
- CP newpath moveto Ts Br mul neg 2 div dup rmoveto 0 Ts Br mul rlineto Ts Br mul 0 rlineto 0 Ts Br mul neg rlineto closepath UI 2 mod 1 eq{stroke}{fill}ie
+ CP newpath moveto Ts Br mul neg 2 div dup rmoveto
+ 0 Ts Br mul rlineto Ts Br mul 0 rlineto 0 Ts Br mul neg rlineto closepath
+ stroke
  grestore M CP E Ts Br 1 add mul sub E BB /Ms t D}if}D
 /NP {Ms TP not or PA and OU and{TP{OR}if f1{mF k2 /mF E D /YC 0 D}if
  TP TU not PM 0 eq or and{showpage}if DU Ip TE not{LA}if 0.6 LW
