@@ -3,6 +3,8 @@
 */
 
 @html2ps {
+  option { twoup: 1; }
+  margin { middle: .375in; }
   ball-radius: .75em;
 }
 

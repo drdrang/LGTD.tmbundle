@@ -641,7 +641,7 @@ if($opt_L) {
   $rot="";
 }
 
-if($opt_2) {
+if($twoup) {
   $wl=($wl-$margin{'middle'})/2;
   $wr=($wr-$margin{'middle'})/2;
 }
