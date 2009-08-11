@@ -3,7 +3,6 @@
 */
 
 @html2ps {
-  ball-radius: .75em;
 }
 
 /* Standard style sheet definitions */

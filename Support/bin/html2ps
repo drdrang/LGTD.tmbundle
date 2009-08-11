@@ -272,7 +272,7 @@ $conf=<<'EOR';
   datefmt: "%e %b %Y  %R";
   locale: "";
   doc-sep: "<!--NewPage-->";
-  ball-radius: 0.25em;
+  ball-radius: 0.75em;
   numbstyle: 0;
   showurl: 0;
   seq-number: 0;
@@ -641,7 +641,7 @@ if($opt_L) {
   $rot="";
 }
 
-if($twoup) {
+if($twoup eq "t") {
   $wl=($wl-$margin{'middle'})/2;
   $wr=($wr-$margin{'middle'})/2;
 }
