@@ -50,7 +50,7 @@ print "Waiting for manual feed of index cards";
 
 # Form the HTML and send it through the pipeline.
 my $html = $top . $middle . $bottom;
-# open OUT, "| html2ps -f '$html2psrc' | $ENV{'TM_LGTD_PS2PDF'} - | $lpr";
-open OUT, "| html2ps -2 -f '$html2psrc' | $ENV{'TM_LGTD_PS2PDF'} - ~/Desktop/out.pdf";
+open OUT, "| html2ps -f '$html2psrc' | $ENV{'TM_LGTD_PS2PDF'} - | $lpr";
+# open OUT, "| html2ps -f '$html2psrc' | $ENV{'TM_LGTD_PS2PDF'} - ~/Desktop/out.pdf";
 print OUT $html;
 close OUT;
