@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>- ${1:waiting}$0
-</string>
+	<string>- ${0:waiting}</string>
 	<key>name</key>
 	<string>new waiting</string>
 	<key>scope</key>
