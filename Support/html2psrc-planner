@@ -4,7 +4,7 @@
 
 @html2ps {
   option { twoup: 1; }
-  margin { middle: .375in; }
+  margin { middle: .25in; }
 }
 
 /* Standard style sheet definitions */
@@ -20,6 +20,6 @@ ul      { margin-left: 1.5em; }
 li      { margin-left: -.5em; }
 @page   { size: 8.5in 11in;
           margin-left: 2in;
-          margin-right: 2.25in;
+          margin-right: 2.125in;
           margin-top: .25in;
           margin-bottom: 3.25in}
