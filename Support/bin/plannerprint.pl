@@ -10,7 +10,7 @@ $html2psrc = "$ENV{'TM_BUNDLE_SUPPORT'}/html2psrc-planner";
 my $lpr = "lpr -o ManualFeed=True";
 
 # The date.
-$today = `date +"%a %b %e, %Y"`;
+# $today = `date +"%a %b %e, %Y"`;
 
 # The top of the HTML document.
 my $top = <<"TOP";
@@ -18,7 +18,6 @@ my $top = <<"TOP";
 <head>
 </head>
 <body>
-<h1>$today</h1>
 TOP
 
 # The bottom of the HTML document.
