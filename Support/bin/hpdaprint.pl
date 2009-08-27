@@ -46,7 +46,7 @@ for $position (@offsets) {
 }
 
 # Tell me to go to the printer.
-print "Waiting for manual feed of index cards";
+print "Waiting for manual feed of 3x5 index card(s)";
 
 # Form the HTML and send it through the pipeline.
 my $html = $top . $middle . $bottom;

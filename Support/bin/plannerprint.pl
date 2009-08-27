@@ -49,7 +49,7 @@ my $middle = Markdown::Markdown($original);
 # }
 
 # Tell me to go to the printer.
-print "Waiting for manual feed of index cards";
+print "Waiting for manual feed of 5x8 index card(s)";
 
 # Form the HTML and send it through the pipeline.
 my $html = $top . $middle . $bottom;
