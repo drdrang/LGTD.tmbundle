@@ -27,12 +27,17 @@ my $bottom = <<BOTTOM;
 </html>
 BOTTOM
 
-# Slurp in the text and filter it through Markdown.
+# Slurp in the text.
 my $original;
 {
   local $/;
   $original = <>;
 }
+
+# Get rid of the title line.
+$original =~ s/^Contexts$|^Projects$//m;
+
+# Filter the rest through Markdown.
 use Markdown;
 my $middle = Markdown::Markdown($original);
 

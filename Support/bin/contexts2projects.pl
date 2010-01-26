@@ -14,6 +14,9 @@ $/ = "\n# ";
 # Open the contexts file for reading.
 open CONTEXTS, $context_file or die "Can't open contexts file: $!";
 
+# Skip over the title lines.
+$discard = <CONTEXTS>;
+
 # Loop through the contexts, gathering all the next action lines
 # and adding them to the actions hash and all the hold lines and
 # adding them to the waiting hash.
@@ -50,6 +53,9 @@ push @projects, keys %waiting;
 # Open the projects file for printing.
 open PROJECTS, $project_file or die "Can't open projects file: $!";
 select PROJECTS;
+
+# Print the title lines.
+print "Projects\n\n";
 
 # Print the next actions and waitings according to project.
 for $project (@projects) {

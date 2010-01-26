@@ -14,6 +14,9 @@ $/ = "\n# ";
 # Open the project file for reading.
 open PROJECTS, $project_file or die "Can't open projects file: $!";
 
+# Skip over the title lines.
+$discard = <CONTEXTS>;
+
 # Loop through the projects, gathering all the next action lines
 # and adding them to the contexts hash.
 while ($stanza = <PROJECTS>) {
@@ -38,6 +41,9 @@ close PROJECTS;
 # Open the contexts file for printing.
 open CONTEXTS, $context_file or die "Can't open context file: $!";
 select CONTEXTS;
+
+# Print the title lines.
+print "Contexts\n\n";
 
 # Print the next actions according to context.
 for (sort keys %actions) {
