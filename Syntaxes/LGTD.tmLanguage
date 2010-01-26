@@ -18,7 +18,7 @@
 			<key>end</key>
 			<string>^(?=not)possible$</string>
 			<key>name</key>
-			<string>text.html.markdown</string>
+			<string>body.lgtd</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -26,6 +26,12 @@
 					<string>text.html.markdown</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^(Contexts|Projects)$</string>
+			<key>name</key>
+			<string>comment.title.lgtd</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
